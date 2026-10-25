@@ -20,10 +20,10 @@ def generate_dummy_data():
     return pd.DataFrame(data)
 
 if __name__ == "__main__":
-    print("📊 Loading Data...")
+    print(" Loading Data...")
     df = generate_dummy_data()
 
-    print("🧹 Preprocessing Data...")
+    print(" Preprocessing Data...")
     le = LabelEncoder()
     categorical_cols = ['contract_type', 'tech_support', 'churn']
     for col in categorical_cols:
@@ -39,12 +39,12 @@ if __name__ == "__main__":
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
-    print("🤖 Training Model (Random Forest)...")
+    print(" Training Model (Random Forest)...")
     # Using class_weight='balanced' to handle churn imbalance
     model = RandomForestClassifier(n_estimators=100, random_state=42, class_weight='balanced')
     model.fit(X_train, y_train)
 
-    print("📈 Evaluating Model...")
+    print(" Evaluating Model...")
     y_pred = model.predict(X_test)
 
     print("\n--- Classification Report ---")
