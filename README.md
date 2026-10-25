@@ -1,2 +1,23 @@
-# nour
- A collection of n8n automation, Machine Learning, and Deep Learning projects focused on solving real-world problems. Includes automated workflows, API integrations, AI agents, predictive models, classification algorithms, and neural networks to build intelligent and efficient solutions.
+# Customer Churn Prediction 📉
+
+## 📌 وصف المشروع (Project Description)
+هذا المشروع يهدف إلى التنبؤ باحتمالية مغادرة العملاء للشركة (Customer Churn) باستخدام خوارزميات تعلم الآلة. 
+الهدف الأساسي هو مساعدة الشركات على الاحتفاظ بالعملاء من خلال تقديم عروض استباقية للعملاء المحتمل مغادرتهم.
+
+## 🛠️ التقنيات المستخدمة (Tech Stack)
+- **Python**
+- **Pandas & NumPy** (لتحليل ومعالجة البيانات)
+- **Scikit-Learn** (لبناء وتدريب نموذج تعلم الآلة)
+
+## 🚀 كيفية التشغيل (How to Run)
+1. قم بتثبيت المكتبات المطلوبة:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. قم بتشغيل سكريبت التدريب:
+   ```bash
+   python churn_prediction.py
+   ```
+   
+## 📊 التقييم (Evaluation)
+تم التركيز في هذا المشروع على مقياس **Recall** لأن تكلفة تفويت عميل سيغادر بالفعل أعلى من تكلفة التنبؤ الخاطئ بعميل لن يغادر.
